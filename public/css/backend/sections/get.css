@@ -1,0 +1,347 @@
+.tabs-side {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .tabs-side .tabs-header {
+    width: 100%;
+    height: 70px;
+    padding: 20px 50px;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  
+  .tabs-side .add-new-background {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  
+  .tabs-side .main-background-content {
+    width: 100%;
+    height: calc(100% - 130px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
+  
+  .tabs-side .main-background-content > a {
+    width: 200px;
+    height: 200px;
+    background-color: #2b3035;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 7px;
+    text-align: center;
+    color: #cbcfd4;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .tabs-side .main-background-content > a:hover {
+    background-color: #343a40;
+    transform: translateY(-10px);
+  }
+  
+  .tabs-side .main-background-content > a i {
+    font-size: 50px;
+    transition: 0.3s;
+  }
+  .tabs-side .main-background-content {
+    width: 100%;
+    height: calc(100% - 130px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
+  
+  .main-background-content .background-button {
+    transition: 0.3s;
+    background-color: #2b3035;
+  }
+  
+  .main-background-content .background-button .card-text {
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .main-background-content .background-button .card-text span {
+      color: #aeb2b6;
+      font-size: 13px;
+      margin: 0;
+  }
+  
+  .main-background-content .background-button .post-date {
+    color: #aeb2b6;
+    font-size: 13px;
+    margin: 0;
+  }
+  
+  .main-background-content .background-button .post-publisher {
+    color: #aeb2b6;
+    font-size: 13px;
+  }
+  
+  .main-background-content .background-button .post-publisher span {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .main-background-content .background-button .btns {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .main-background-content .background-button .btns .btn {
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 576px) {
+    .logo img {
+      height: 25px;
+    }
+  
+    .logo-text {
+      font-size: 10px;
+    }
+  
+    .user-img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .user-info .user-name {
+      font-size: 12px;
+    }
+  
+    .user-info .user-position {
+      font-size: 12px;
+    }
+  
+    .header {
+      height: 7%;
+    }
+  
+    .home-page-body .side-bar {
+      width: 15%;
+    }
+  
+    .home-page-body .tabs-side {
+      width: 85%;
+    }
+  
+    .home-page-container {
+      height: 93%;
+    }
+  
+    .side-bar ul li {
+      width: 50px;
+      height: 50px;
+      border-radius: 1000px;
+      transition: 0.3s;
+    }
+  
+    .side-bar ul li:hover {
+      background-color: #343a40;
+    }
+  
+    .side-bar ul li a {
+      display: none;
+    }
+  
+    .side-bar ul li i {
+      display: block;
+      font-size: 20px;
+      color: #fff;
+    }
+  
+    .tabs-side .tabs-header {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .login-container .login-form {
+      width: 270px;
+      padding: 20px;
+    }
+  
+    .login-container .welcome-msg h1 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  
+    .login-container .login-form .username-label,
+    .login-container .login-form .password-label {
+      font-size: 13px;
+    }
+  
+    .login-container .login-form input[type="text"] {
+      font-size: 13px;
+      height: 32px;
+    }
+  
+    .login-container .login-form input[type="submit"] {
+      font-size: 13px;
+      height: 32px;
+    }
+  
+    .login-container .login-form .username,
+    .login-container .login-form .password {
+      margin-bottom: 20px;
+    }
+  
+    .logo img {
+      height: 30px;
+    }
+  
+    .logo-text {
+      font-size: 12px;
+    }
+  
+    .user-img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .user-info .user-name {
+      font-size: 14px;
+    }
+  
+    .user-info .user-position {
+      font-size: 14px;
+    }
+  
+    .header {
+      height: 9%;
+    }
+  
+    .home-page-body .side-bar {
+      width: 15%;
+    }
+  
+    .home-page-body .tabs-side {
+      width: 85%;
+    }
+  
+    .home-page-container {
+      height: 91%;
+    }
+  
+    .side-bar ul li {
+      width: 60px;
+      height: 60px;
+      border-radius: 1000px;
+    }
+  
+    .side-bar ul li:hover {
+      background-color: #343a40;
+    }
+  
+    .side-bar ul li a {
+      display: none;
+    }
+  
+    .side-bar ul li i {
+      display: block;
+      font-size: 23px;
+      color: #fff;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .logo img {
+      height: 30px;
+    }
+  
+    .logo-text {
+      font-size: 12px;
+    }
+  
+    .home-page-body .side-bar {
+      width: 20%;
+    }
+  
+    .home-page-body .tabs-side {
+      width: 80%;
+    }
+  
+    .side-bar ul li {
+      width: 100%;
+      height: none;
+      border-radius: none;
+    }
+  
+    .side-bar ul li:hover {
+      background-color: unset;
+    }
+  
+    .side-bar ul li a {
+      display: block;
+    }
+  
+    .side-bar ul li i {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .logo img {
+      height: 33px;
+    }
+  
+    .logo-text {
+      font-size: 13px;
+    }
+  
+    .home-page-body .side-bar {
+      width: 20%;
+    }
+  
+    .home-page-body .tabs-side {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .logo img {
+      height: 33px;
+    }
+  
+    .logo-text {
+      font-size: 13px;
+    }
+  
+    .home-page-body .side-bar {
+      width: 20%;
+    }
+  
+    .home-page-body .tabs-side {
+      width: 80%;
+    }
+  }
+  

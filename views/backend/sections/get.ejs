@@ -1,0 +1,55 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/backend/sections/get.css">
+    <title><%= title %></title>
+    </head>
+
+<body class="home-page-body" dir="rtl">
+    <%- include('../includes/header.ejs') %>
+
+    <div class="home-page-container">
+        
+        <%- include('../includes/sidbar.ejs') %>
+
+        <div class="tabs-side">
+            <div class="tabs-header">
+                الاقسام
+            </div>
+            <div class="add-new-background">
+                <a href="/sections/manage/add" class="btn btn-success">اضافة قسم جديد</a>
+            </div>
+            <div class="main-background-content">
+                <% for( let i = 0; i < sections.length; i++ ) { %>
+                    <div class="shadow-sm rounded-3 card background-button" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span>عنوان القسم</span><br>
+                                <%= sections[i].title %>
+                            </p>
+                            <p class="card-text">
+                                <span>عدد المقالات المرفوعة</span><br>
+                                <%= sections[i].articleNumbers %>
+                            </p>
+                            <p dir="ltr" class="post-date">
+                                <%= sections[i].date %> <br>
+                                <%= sections[i].time %>
+                            </p>
+                            <p class="post-publisher">
+                                الناشر: <span><%= sections[i].publisher %></span>
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <div class="btns">
+                                <a href="/sections/manage/edit/<%= sections[i].id %>" class="btn bg-primary mb-3">تعديل</a>
+                                <button onclick="showConfirmBox_delete('<%= sections[i].id %>')" type="button" class="btn bg-danger mb-3">حذف</button>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript/backend/includes/logout.js"></script>
+    <script src="/javascript/backend/sections/get.js"></script>
+</body>
+</html>

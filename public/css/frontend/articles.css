@@ -1,0 +1,325 @@
+.larg-static-header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    transition: var(--main-transition);
+    background-color: var(--color-4);
+    height: 75px;
+}
+
+.main_header { 
+    display: none;
+}
+
+.articles {
+    margin-top: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 75px;
+}
+
+.articles > div > p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-3);
+    margin: 40px 15px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color-9);
+}
+
+.articles .latest-articles {
+    width: 60%;
+}
+
+.articles .pubular-articles {
+    width: 40%;
+}
+
+.articles .latest-articles .article-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+}
+
+.articles .latest-articles .article-cards .card {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: var(--color-4);
+    border-radius: var(--border-radius-sm);
+    flex-direction: row;
+}
+
+.articles .latest-articles .article-cards .card:active .title{
+    text-decoration: underline;
+}
+
+.articles .latest-articles .article-cards .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+}
+
+.articles .latest-articles .article-cards .card > div {
+    width: 100%;
+}
+
+.articles .latest-articles .article-cards .card .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.articles .latest-articles .article-cards .card .title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-1);
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+.articles .latest-articles .article-cards .card .author {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-9);
+    margin-bottom: 5px;
+}
+
+.articles .latest-articles .article-cards .card .author span{
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+.articles .latest-articles .article-cards .card .caption {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-9);
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+}
+
+.articles .latest-articles .article-cards .card .date {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-9);
+}
+
+.articles .latest-articles .article-cards .card .date span{
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+
+
+.articles .pubular-articles .article-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.articles .pubular-articles .article-cards .card {
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background-color: var(--color-4);
+    border-radius: var(--border-radius-sm);
+}
+
+.articles .pubular-articles .article-cards .card:active .title{
+    text-decoration: underline;
+}
+
+.articles .pubular-articles .article-cards .card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+}
+
+.articles .pubular-articles .article-cards .card > div {
+    width: 100%;
+}
+
+.articles .pubular-articles .article-cards .card .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.articles .pubular-articles .article-cards .card .title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-1);
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.articles .pubular-articles .article-cards .card .author {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-9);
+    margin-bottom: 5px;
+}
+
+.articles .pubular-articles .article-cards .card .author span{
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+.articles .pubular-articles .article-cards .card .date {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-9);
+}
+
+.articles .pubular-articles .article-cards .card .date span{
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+.pages-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 75px;
+}
+.pages-btn ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pages-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-1);
+    background-color: var(--color-4);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pages-btn a:hover {
+    background-color: var(--color-6);
+    color: var(--color-4);
+}
+
+.pages-btn a:active {
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+/* respnsive  */
+@media (max-width:767px) {
+    .main_header { 
+        display: flex;
+    }
+
+    .articles {
+        margin-top: 0px;
+        flex-direction: column
+    }
+
+    .articles .latest-articles {
+        width: 100%;
+    }
+    
+    .articles .pubular-articles {
+        width: 100%;
+    }
+
+    .articles .latest-articles .article-cards .card img {
+        width: 125px;
+        height: 125px;
+    }
+    
+    .articles .pubular-articles .article-cards .card {
+        width: 180px;
+    }
+} 
+
+@media (max-width:551px) {}
+
+@media (max-width:420px) {
+    .articles .latest-articles .article-cards .card {
+        height: 100%; 
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .articles .latest-articles .article-cards .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width:768px) {
+    .articles {
+        margin-top: 75px;
+        flex-direction: column
+    }
+
+    .articles .latest-articles {
+        width: 100%;
+    }
+    
+    .articles .pubular-articles {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .articles {
+        flex-direction: row;
+    }
+    
+    .articles .latest-articles {
+        width: 70%;
+    }
+    
+    .articles .pubular-articles {
+        width: 30%;
+    }
+}
+
+@media (min-width:1200px) {}

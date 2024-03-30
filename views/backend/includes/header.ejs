@@ -1,0 +1,27 @@
+<header style="height: 12%;" class=" header shadow-sm">
+    <div class="user">
+        <div class="user-img">
+            <% 
+                const fullPath=admin.imageUrl; 
+                pathSegments=fullPath.split('\\');
+                uploadsIndex=pathSegments.indexOf('public'); 
+                const relativePath=pathSegments.slice(uploadsIndex + 1).join('\\'); %>
+                <img src="<%= `/${relativePath}` %>" alt="">
+            %>
+        </div>
+        <div class="user-info">
+            <p id="fullUserName" class="user-name">
+                <%= `${admin.firstName}  ${admin.lastName}` %>
+            </p>
+            <p class="user-position">
+                <%= `${admin.position}` %>
+            </p>
+        </div>
+    </div>
+    <div class="logo">
+        <p style=" font-size: 20px; width: 200px; height: 100%; display: flex; align-items: center; justify-content: center;" class="logo-text">
+            مقالات | لوحة التحكم
+        </p>
+    </div>
+    </div>
+</header>

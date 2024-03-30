@@ -1,0 +1,38 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/frontend/sections.css">
+    <title><%= title %></title>
+</head>
+
+<body>
+    <%- include('./includes/header.ejs') %>
+
+    <section class="articles-sections container">
+        <div class="right-side">
+            <p>
+                محتوى علمي ثقافي متنوع
+            </p>
+
+            <p>
+                اقسام المقالات
+            </p>
+
+            <p>
+                يحتوي الموقع على عدة اقسام وتبيوبات تنشر ضمنها المقالات، في اطار موضوعاتها
+            </p>
+        </div>
+        <div class="left-side">
+            <% for( let i = 0; i < 12; i++ ) { %>
+                <a class="section-card">
+                    <p>
+                        العقائد
+                    </p>
+                    <span>
+                        (20) مقالا
+                    </span>
+                </a>
+            <% } %>
+        </div>
+    </section>
+    
+    <script src="/javascript/frontend/includes/header.js"></script>
+    <%- include('./includes/footer.ejs') %>

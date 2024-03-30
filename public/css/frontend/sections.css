@@ -1,0 +1,123 @@
+.larg-static-header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    transition: var(--main-transition);
+    background-color: var(--color-4);
+    height: 75px;
+}
+
+.main_header { 
+    display: none;
+}
+
+.articles-sections {
+    margin-top: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articles-sections .right-side {
+    width: 40%;
+    height: calc(75vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.articles-sections .right-side p {
+    text-align: right;
+    width: 100%;
+    font-weight: 400;
+}
+
+.articles-sections .right-side p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-1);
+    margin: 10px 0px;
+}
+
+.articles-sections .left-side {
+    margin-top: 70px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap : 20px;
+}
+
+.articles-sections .left-side > a {
+    width: 150px;
+    height: 150px;
+    color: var(--color-1);
+    background-color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: var(--border-radius-sm);
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.articles-sections .left-side > a p {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.articles-sections .left-side > a span {
+    font-size: 15px;
+    color: var(--color-9);
+}
+
+.articles-sections .left-side > a:hover {
+    background-color: var(--color-6);
+}
+
+.articles-sections .left-side > a:hover p{
+    color: var(--color-4);
+}
+
+.articles-sections .left-side > a:hover span {
+    color: var(--color-4);
+}
+/* respnsive  */
+@media (max-width:767px) {
+    .main_header { 
+        display: flex;
+    }
+
+    .articles-sections {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .articles-sections .right-side {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .articles-sections .left-side {
+        width: 100%;
+    }
+
+    .articles-sections .right-side p {
+        text-align: center;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width:551px) {}
+
+@media (min-width:768px) {}
+
+@media (min-width:992px) {}
+
+@media (min-width:1200px) {}

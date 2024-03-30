@@ -1,0 +1,78 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/backend/add-articles.css">
+    <title>
+        <%= title %>
+    </title>
+    </head>
+
+    <body class="home-page-body" dir="rtl">
+
+        <div id="spinner" class="spinner-container">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <%- include('./includes/header.ejs') %>
+
+            <div class="home-page-container">
+
+                <%- include('./includes/sidbar.ejs') %>
+
+                    <div class="tabs-side">
+                        <div class="tabs-header">
+                            نشر مقال جديد
+                        </div>
+                        <div class="main-background-content">
+                            <form class="bg-forms" id="form">
+                                <div id="box-error">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">عنوان المقال</label>
+                                    <input required type="text" class="form-control" id="title">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="caption" class="form-label">كابشن المقال</label>
+                                    <textarea required class="form-control" id="caption" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">وصف المقال</label>
+                                    <textarea required class="form-control" id="description" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mainText" class="form-label">نص المقال</label>
+                                    <textarea required class="form-control" id="mainText" rows="10"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="topics" class="form-label">موضوعات المقال</label>
+                                    <input required type="text" class="form-control" id="topics">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>test select</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                
+                                <div class="images-main-lable mb-2">
+                                        صورة المقال   
+                                </div>
+                                <div class="input-group mb-5 bg-file">
+                                    <input required multiple type="file" accept="image/*" class="form-control"
+                                        id="images">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary mb-3">نشر الخبر</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            <script src="/javascript/backend/includes/logout.js"></script>
+            <script src="/javascript/backend/add-articles.js"></script>
+    </body>
+
+    </html>

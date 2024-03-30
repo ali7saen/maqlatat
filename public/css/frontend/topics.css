@@ -1,0 +1,154 @@
+.larg-static-header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    transition: var(--main-transition);
+    background-color: var(--color-4);
+    height: 75px;
+}
+
+.main_header {
+    display: none;
+}
+
+.topics {
+    margin-top: 75px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    gap: 15px;
+}
+
+.topics .btn {
+    width: 35%;
+    outline: none;
+    border: none;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.topics .btn:active {
+    background-color: #030316;
+    color: #fff;
+}
+
+.topics input {
+    width: 65%;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-1);
+    padding: 5px 15px;
+    border-radius: var(--border-radius-sm);
+    outline: none;
+    color: var(--color-1);
+}
+
+.topics input:focus {
+    background-color: var(--color-4);
+    color: var(--color-3);
+}
+
+.result-box {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.result-box .result-item{
+    background-color: var(--color-4);
+    color: var(--color-1);
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+}
+
+.result-box .result-item.selected {
+    background-color: var(--color-6);
+}
+
+.result-box .result-item.hide {
+    display: none;
+}
+
+
+
+
+
+
+/* respnsive  */
+@media (max-width:767px) {
+    .main_header {
+        display: flex;
+    }
+    .topics {
+        margin-top: 0px;
+    }
+    .topics .btn {
+        width: 100%;
+    }
+    .topics input {
+        width: 100%;
+    }
+    .search-box {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:551px) {}
+
+@media (min-width:768px) {
+    .topics {
+        margin-top: 75px;
+    }
+
+    .topics .btn {
+        width: 45%;
+    }
+    
+    .topics input {
+        width: 55%;
+    }
+    .search-box {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:992px) {
+    .topics .btn {
+        width: 35%;
+    }
+    
+    .topics input {
+        width: 65%;
+    }
+}
+
+@media (min-width:1200px) {
+    .topics .btn {
+        width: 30%;
+    }
+    
+    .topics input {
+        width: 70%;
+    }
+}

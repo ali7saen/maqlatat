@@ -1,0 +1,119 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/frontend/articles.css">
+    <title><%= title %></title>
+</head>
+
+<body>
+    <%- include('./includes/header.ejs') %>
+    <sections class="articles container">
+        <div class="latest-articles">
+            <p>
+                آخر المقالات
+            </p>
+            <div class="article-cards">
+                <% for( let i = 0; i < 5; i++ ) { %>
+                    <div class="card">
+                        <img src="/imgs/aspect-ratios-blogpost-1x1-1.png" alt="article image">
+                        <div class="text">
+                            <div>
+                                <p class="title">
+                                    عنوان المقال يكتب هنا 
+                                </p>
+                                <p class="caption">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto fuga dolores consequatur iure? Id voluptatum nemo voluptas at quam. Voluptates.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <p class="author">
+                                    الكاتب: 
+                                    <span>
+                                        علي حسين
+                                    </span>
+                                </p>
+                                <p class="date">
+                                    آخر تعديل: 
+                                    <span>
+                                        2/1/2024
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="pubular-articles">
+            <p>
+                الأكثر قراءة
+            </p>
+            <div class="article-cards">
+                <% for( let i = 0; i < 4; i++ ) { %>
+                    <div class="card">
+                        <img src="/imgs/aspect-ratios-blogpost-1x1-1.png" alt="article image">
+                        <div class="text">
+                            <div>
+                                <p class="title">
+                                    عنوان المقال يكتب هنا 
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <p class="author">
+                                    الكاتب: 
+                                    <span>
+                                        علي حسين
+                                    </span>
+                                </p>
+                                <p class="date">
+                                    آخر تعديل: 
+                                    <span>
+                                        2/1/2024
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </sections>
+
+    <div class="pages-btn">
+        <a>
+            <i class="fa-solid fa-forward"></i>
+        </a>
+        <ul>
+            <li>
+                <a href="#">
+                    1
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    2
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    3
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    4
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    5
+                </a>
+            </li>
+        </ul>
+        <a>
+            <i class="fa-solid fa-backward"></i>
+        </a>
+    </div>
+    
+    <script src="/javascript/frontend/includes/header.js"></script>
+    <%- include('./includes/footer.ejs') %>

@@ -1,0 +1,69 @@
+/* login page2  */
+.login-container .login-form .username-label,
+.login-container .login-form .password-label {
+    display: block;
+    text-align: right;
+}
+.login-container .login-form .username,
+.login-container .login-form .password {
+    direction: rtl;
+    width: 100%;
+}
+.login-container .login-form .login-send-btn {
+    width: 100%;
+}
+.login-container .login-form {
+    width: 400px;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.login-container {
+    height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+}
+.login-container .welcome-msg h1 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* tabs screens */
+@media (max-width: 576px) {
+    /* login page  */
+    .login-container .login-form {
+        width: 270px;
+        padding: 20px;
+    }
+    .login-container .welcome-msg h1 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .login-container .login-form .username-label,
+    .login-container .login-form .password-label {
+        font-size: 13px;
+    }
+    .login-container .login-form input[type="text"] {
+        font-size: 13px;
+        height: 32px;
+    }
+    .login-container .login-form input[type="submit"] {
+        font-size: 13px;
+        height: 32px;
+    }
+    .login-container .login-form .username,
+    .login-container .login-form .password {
+        margin-bottom: 20px;
+    }
+}

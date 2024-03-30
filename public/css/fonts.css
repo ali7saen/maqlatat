@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Bahij';
+    src: url('../fonts/BahijTheSansArabic-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BahijTheSansArabic-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bahij';
+    src: url('../fonts/BahijTheSansArabic-Light.woff') format('woff'),
+        url('../fonts/BahijTheSansArabic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bahij';
+    src: url('../fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
+        url('../fonts/BahijTheSansArabic-Plain.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bahij';
+    src: url('../fonts/BahijTheSansArabic-Bold.woff2') format('woff2'),
+        url('../fonts/BahijTheSansArabic-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bahij';
+    src: url('../fonts/BahijTheSansArabic-ExtraBold.woff') format('woff'),
+        url('../fonts/BahijTheSansArabic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  }

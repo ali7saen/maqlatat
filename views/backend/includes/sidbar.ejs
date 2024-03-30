@@ -1,0 +1,73 @@
+<div class="side-bar shadow-sm">
+    <ul class="navbar">
+        <li>
+            <a href="/dashboard" id="">
+                الرئيسية
+            </a>
+            <i class="fa-solid fa-image"></i>
+        </li>
+        <li>
+            <i class="fa-solid fa-newspaper"></i>
+            <a href="/dashboard/backgrounds/" id="">
+                الواجهة
+            </a>
+        </li>
+        <li>
+            <a href="/dashboard/news" id="">
+                الاخبار
+            </a>
+            <i class="fa-solid fa-circle-info"></i>
+        </li>
+        <!-- <li>
+            <a href="#" id="">
+                حول المعهد
+            </a>
+            <i class="fa-solid fa-signs-post"></i>
+        </li> -->
+        <li>
+            <a href="/dashboard/ads/adsPage/" id="">
+                الإعلانات
+            </a>
+            <i class="fa-brands fa-envira"></i>
+        </li>
+        <!-- <li>
+            <a href="#" id="">
+                المكتبة الصورية
+            </a>
+            <i class="fa-solid fa-list"></i>
+        </li> -->
+        <!-- <li>
+            <a href="#" id="">
+                المشاريع القرآنية
+            </a>
+            <i class="fa-solid fa-book"></i>
+        </li> -->
+        <li>
+            <a href="/dashboard/books/" id="">
+                الاصدارات العلمية
+            </a>
+            <i class="fa-solid fa-image"></i>
+        </li>
+    </ul>
+    <% if (admin.permission == 1) {%>
+        <div class="setting-box">
+            <h4>الاعدادات</h4>
+            <div>
+                <a href="/dashboard/admins/register">اضافة ادمن</a>
+            </div>
+            <div>
+                <a href="/dashboard/admins/delete">حذف ادمن</a>
+            </div>
+            <div>
+                <span onclick="showConfirmBox_logout()">تسجيل خروج</span>
+            </div>
+        </div>
+    <% } else { %>
+        <div class="setting-box">
+            <h4>الاعدادات</h4>
+            <div>
+                <span onclick="showConfirmBox_logout()">تسجيل خروج</span>
+            </div>
+        </div>
+    <% } %>
+</div>

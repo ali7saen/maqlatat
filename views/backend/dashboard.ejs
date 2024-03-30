@@ -1,0 +1,78 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/backend/dashboard.css">
+    <title><%= title %></title>
+</head>
+<body class="home-page-body" dir="rtl">
+    <%- include('./includes/header.ejs') %>
+
+    <div class="home-page-container">
+        
+        <%- include('./includes/sidbar.ejs') %>
+
+        <div class="tabs-side">
+            <div class="tabs-header">
+                الرئيسية
+            </div>
+            <div class="tabs">
+                <div class="tab">
+                    <a class="shadow-sm rounded-3" href="/dashboard/backgrounds/">
+                        <i class="fa-solid fa-image"></i>
+                        <div class="tab-text">
+                            الواجهة الرئيسية
+                        </div>
+                    </a>
+                </div>
+                <div class="tab">
+                    <a class="shadow-sm rounded-3" href="/dashboard/news">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <div class="tab-text">
+                            الاخبار
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="tab">
+                    <a class="shadow-sm rounded-3" href="#">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <div class="tab-text">
+                            حول المعهد
+                        </div>
+                    </a>
+                </div> -->
+                <div class="tab">
+                    <a class="shadow-sm rounded-3" href="/dashboard/ads/adsPage/">
+                        <i class="fa-solid fa-signs-post"></i>
+                        <div class="tab-text">
+                            الإعلانات
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="tab">
+                    <a class="shadow-sm rounded-3" href="#">
+                        <i class="fa-brands fa-envira"></i>
+                        <div class="tab-text">
+                            المكتبة الصورية                       
+                        </div>
+                    </a>
+                </div> -->
+                <!-- <div class="tab">
+                    <a class="shadow-sm rounded-3" href="#">
+                        <i class="fa-solid fa-list"></i>                        
+                        <div class="tab-text">
+                            المشاريع القرآنية
+                        </div>
+                    </a>
+                </div> -->
+                <div class="tab">
+                    <a class="shadow-sm rounded-3" href="/sections/manage/">
+                        <i class="fa-solid fa-book"></i>
+                        <div class="tab-text">
+                            اقسام المقالات
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/backend/includes/logout.js"></script>
+</body>
+</html>

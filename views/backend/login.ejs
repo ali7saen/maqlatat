@@ -1,0 +1,27 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/backend/login.css">
+    <title><%= title %></title>
+</head>
+<body class="bg-dark">
+    <div class="container login-container">
+        <div class="welcome-msg">
+            <h1>تسجيل الدخول</h1>
+        </div>
+        <form id="login-form" class="login-form shadow-sm rounded-3">
+            <div id="box-error">
+            </div>
+            <div class="username mb-3">
+                <label dir="rtl" class="form-label username-label" for="username">اسم المستخدم</label>
+                <input class="form-control " type="text" name="username" id="username">
+            </div>
+            <div class="password mb-3">
+                <label class="form-label password-label" for="username">كلمة المرور</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+            <input class="btn btn-primary login-send-btn mt-3" id="login-btn" type="submit" value="تسجيل دخول">
+        </form>
+    </div>
+
+    <script src="/javascript/backend/login.js"></script>
+</body>
+</html>

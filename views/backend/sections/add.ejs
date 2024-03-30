@@ -1,0 +1,45 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/backend/sections/add.css">
+    <title>
+        <%= title %>
+    </title>
+    </head>
+
+    <body class="home-page-body" dir="rtl">
+
+        <div id="spinner" class="spinner-container">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <%- include('../includes/header.ejs') %>
+
+            <div class="home-page-container">
+
+                <%- include('../includes/sidbar.ejs') %>
+
+                    <div class="tabs-side">
+                        <div class="tabs-header">
+                            اضافة قسم جديد
+                        </div>
+                        <div class="main-background-content">
+                            <form class="bg-forms" id="form">
+                                <div id="box-error">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">عنوان القسم</label>
+                                    <input required type="text" class="form-control" id="title">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary mb-3">اضافة</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            <script src="/javascript/backend/includes/logout.js"></script>
+            <script src="/javascript/backend/sections/add.js"></script>
+    </body>
+
+    </html>

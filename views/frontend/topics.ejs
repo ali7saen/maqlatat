@@ -1,0 +1,27 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/frontend/topics.css">
+    <title>
+        <%= title %>
+    </title>
+    </head>
+
+    <body>
+        <%- include('./includes/header.ejs') %>
+            <section class="topics container">
+                <div class="search-box">
+                    <button class="btn">
+                        عرض المقالات حسب الموضوعات المختارة
+                    </button>
+                    <input id="topic" type="text" placeholder="عنوان الموضوع">
+                </div>
+                <div class="result-box">
+                    <% for( let i = 1; i < 50; i++ ) { %>
+                        <div onclick="choiceResultItem('<%= i %>')" id="resultItem#<%= i %>" class="result-item">
+                            Lorem, ipsum dolor.
+                        </div>
+                    <% } %>
+                </div>
+            </section>
+            <script src="/javascript/frontend/includes/header.js"></script>
+            <script src="/javascript/frontend/topics.js"></script>
+    <%- include('./includes/footer.ejs') %>

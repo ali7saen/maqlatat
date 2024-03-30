@@ -1,0 +1,333 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap'); */
+
+@font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-Bold.woff2') format('woff2'),
+        url('../../fonts/BahijTheSansArabic-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-ExtraLight.woff2') format('woff2'),
+        url('../../fonts/BahijTheSansArabic-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
+        url('../../fonts/BahijTheSansArabic-Plain.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  body {
+    font-family: "Bahij", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* spinner */
+  .spinner-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: #000000a3;
+  }
+  
+  .spinner-container > div {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #212529;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .header {
+    width: 100%;
+    height: 10%;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid #2b3035;
+  }
+  
+  .home-page-body {
+    width: 100%;
+    height: 100vh;
+    background-color: #212529;
+  }
+  
+  .home-page-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .home-page-body .side-bar {
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #2b3035;
+  }
+  
+  .home-page-body .tabs-side {
+    width: 70%;
+    height: 100%;
+  }
+  
+  .user {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    overflow: hidden;
+    margin: 0 20px 0 20px;
+  }
+  
+  .user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    color: #fff;
+    width: 1fr;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .user-info p {
+    margin: 0;
+  }
+  
+  .user-info .user-name {
+    font-weight: 600;
+  }
+  
+  .user-info .user-position {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+  }
+  
+  .logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .logo img {
+    height: 35px;
+    margin: 0 20px 0 10px;
+  }
+  
+  .logo-text {
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  
+  .side-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .side-bar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .side-bar ul li a {
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .side-bar ul li i {
+    display: none;
+  }
+  
+  .side-bar ul li a:hover {
+    background-color: #343a40;
+    padding-right: 40px;
+    font-size: 20px;
+  }
+  
+  .setting-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
+    color: #fff;
+    flex-direction: column;
+  }
+  .setting-box h4 {
+    padding: 10px;
+    border-bottom: 1px solid #2b3035;
+    font-weight: 800;
+    width: 100%;
+  }
+  
+  .setting-box div {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .setting-box div span,
+  .setting-box div a {
+    transition: 0.3s;
+    display: block;
+    width: fit-content;
+    padding: 3px 20px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .setting-box div span:hover,
+  .setting-box div a:hover {
+    background-color: #343a40;
+    transform: translateX(-3px);
+  }
+  
+  .tabs-side {
+    overflow-y: scroll;
+  }
+  
+  .confirm-box {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000c1;
+    position: fixed;
+    z-index: 1111;
+    top: 0;
+    right: 0;
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirm-box .dialog-box {
+    width: 425px;
+    height: 275px;
+    background-color: #eee;
+    cursor: auto;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .confirm-box .dialog-box .btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  
+  .confirm-box .dialog-box .btns button {
+    width: 100%;
+    height: 45px;
+  }
+  
+  .confirm-box .dialog-box .alert {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  textarea {
+    color: #fff;
+  }
+  
